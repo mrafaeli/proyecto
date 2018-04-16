@@ -1,0 +1,3 @@
+select date, sum(zorzalesQuantity) as Max_zorzales_traded from transaction group by date order by sum(zorzalesQuantity) Desc limit 1;
+
+select date, count(*) as Max_tradings from transaction group by date order by count(*) Desc limit 1;

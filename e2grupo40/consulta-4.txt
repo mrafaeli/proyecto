@@ -1,0 +1,3 @@
+select firstName,lastName from zorzalUser where country='X'
+
+X: Pais elegido

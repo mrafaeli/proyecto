@@ -1,0 +1,1 @@
+select avg(clpRate) as promedio_CLP, avg(dollarRate) as promedio_dollar from historical where date >= (select current_timestamp - interval '1 month');

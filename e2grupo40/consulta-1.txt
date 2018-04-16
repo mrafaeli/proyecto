@@ -1,0 +1,9 @@
+SELECT privatekey,transactionid, date
+FROM zorzalUser, Transaction
+WHERE (privatekey = senderprivatekey
+OR privatekey = recieverprivatekey)
+AND privatekey = Y
+AND date = 'X' ‘aaaa-dd-mm’
+
+Y: PrivateKey
+X: fecha

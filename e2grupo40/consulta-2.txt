@@ -1,0 +1,4 @@
+select (X*clpRate) as CLP,(X*dollarRate) as USD from historical where date='Y'
+
+X: Numero de zorzales
+Y: Fecha

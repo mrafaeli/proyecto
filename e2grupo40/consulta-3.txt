@@ -1,0 +1,9 @@
+SELECT privatekey,transactionid, date
+FROM zorzalUser, Transaction
+WHERE (privatekey = senderprivatekey
+OR privatekey = recieverprivatekey)
+AND privatekey = X
+ORDER BY date
+LIMIT 1
+
+X: PrivateKey
